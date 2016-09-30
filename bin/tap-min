@@ -7,6 +7,6 @@ process.stdin
   .pipe(stream)
   .pipe(process.stdout)
 
-process.on('exit', function() {
-  if (stream.errors.length) process.exit(1)
-})
+// process.on('exit', function() {
+//   if (stream.errors.length) process.exit(1)
+// })
