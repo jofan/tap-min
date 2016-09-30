@@ -20,6 +20,11 @@ module.exports = function() {
     return total + ' ' + word + ' complete (' + time + ')'
   }
 
+  function summary(errors) {
+    var word = (errors > 1) ? 'tests' : 'test'
+    return errors + ' ' + word + ' failed'
+  }
+
   var timer = hirestime()
   var errors = []
   var current = null
@@ -43,7 +48,8 @@ module.exports = function() {
     out.push('\n')
 
     if (errors.length) {
-      output(chalk.red(format(count, time)))
+      output(chalk.yellow(format(count, time)))
+      output(chalk.red(summary(errors.length/7)))
       errors.forEach(function(error) {
         output(error)
       })

@@ -1,6 +1,6 @@
 {
   "name": "tap-mini",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Minimal TAP output formatter.",
   "bin": {
     "tap-mini": "bin/tap-mini"
@@ -19,21 +19,21 @@
     "mocha",
     "reporter"
   ],
-  "author": "Ellen Gummesson",
+  "author": "Stefan Liden",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jofan/tap-min/issues"
   },
   "homepage": "https://github.com/jofan/tap-min",
   "devDependencies": {
-    "tape": "^4.6.1"
+    "tape": "^4.6.2 "
   },
   "dependencies": {
-    "tap-parser": "^0.7.0",
-    "through2": "^0.6.3",
+    "tap-parser": "^3.0.3",
+    "through2": "^2.0.1",
     "duplexer": "^0.1.1",
-    "hirestime": "^1.0.1",
-    "pretty-ms": "^1.0.0",
-    "chalk": "^0.5.1"
+    "hirestime": "^2.1.0",
+    "pretty-ms": "^2.1.0",
+    "chalk": "^1.1.3"
   }
 }
