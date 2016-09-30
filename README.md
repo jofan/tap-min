@@ -1,28 +1,33 @@
-# tap-min
+# tap-mini
 
 Minimal TAP output formatter.
+
+**This is a fork of tap-min where the explicit process.exit has been removed**
+
+The process.exit was removed in order to run in docker containers using nodemon.
 
 ## Installation
 
 ~~~ text
-npm install -g tap-min
-npm install tap-min --save-dev
+npm install tap-mini --save-dev
 ~~~
 
 ## Usage
 
 ~~~ text
-tape test/*.js | tap-min
-node test.js | tap-min
+tape test/*.js | tap-mini
+node test.js | tap-mini
 ~~~
 
-## Output
+## Output (using original tap-min)
 
-![tap-min](http://i.imgur.com/x7G4thJ.png)
+![tap-mini](http://i.imgur.com/x7G4thJ.png)
 
-![tap-min](http://i.imgur.com/dgII7bF.png)
+![tap-mini](http://i.imgur.com/dgII7bF.png)
 
 ## License
+
+**Original Licence for tap-min**
 
 The MIT License (MIT)
 
