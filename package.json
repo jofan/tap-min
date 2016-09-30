@@ -1,6 +1,6 @@
 {
   "name": "tap-mini",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Minimal TAP output formatter.",
   "bin": {
     "tap-mini": "bin/tap-mini"
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/jofan/tap-min",
   "devDependencies": {
-    "tape": "^4.6.1"
+    "tape": "^4.6.2"
   },
   "dependencies": {
     "tap-parser": "^0.7.0",
