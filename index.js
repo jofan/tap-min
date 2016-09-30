@@ -49,7 +49,7 @@ module.exports = function() {
 
     if (errors.length) {
       output(chalk.yellow(format(count, time)))
-      output(chalk.red(summary(errors.length/7)))
+      output(chalk.red(summary(Math.floor(errors.length/7)))
       errors.forEach(function(error) {
         output(error)
       })
