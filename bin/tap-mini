@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-var tapmin = require('../')
-var stream = tapmin()
+var tapmini = require('../')
+var stream = tapmini()
 
 process.stdin
   .pipe(stream)
